@@ -26,9 +26,9 @@ def linear_equalization(img):
         return None
 
 # загружаем три изображения и применяем эквализацию
-img = plt.imread(r'C:\Users\Niemus\YandexDisk\Прочее\VS CODE - PROJECTS\image2.jpg')  
-img2 = plt.imread(r'C:\Users\Niemus\YandexDisk\Прочее\VS CODE - PROJECTS\image3.jpg')  
-img3 = plt.imread(r'C:\Users\Niemus\YandexDisk\Прочее\VS CODE - PROJECTS\image4.jpg')  
+img = plt.imread(r'\image1.jpg')  
+img2 = plt.imread(r'\image2.jpg')  
+img3 = plt.imread(r'\image3.jpg')  
 
 img_gray = np.mean(img, axis=2).astype(np.uint8)
 img_eq = linear_equalization(img_gray)
